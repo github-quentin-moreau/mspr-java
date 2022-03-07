@@ -1,0 +1,81 @@
+.global__container {
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background: rgb(252,252,252);
+    background: linear-gradient(87deg, rgba(252,252,252,0.711922268907563) 18%, rgba(0,120,126,0.9332107843137255) 61%);
+}
+
+.container__infosUser {
+    width: 50%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infosUser__cni {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.infosUser__cni img {
+    width: 50%;
+}
+
+.container__checkbox {
+    width: 50%;
+    align-self: center;
+    color: white;
+    
+}
+
+.checkbox__content {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 50%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+
+.checkbox input {
+    margin-right: 10px;
+}
+
+.checkbox__btnSave {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 25px;
+    
+}
+
+.btnSave {
+   border: 2px solid black;
+   padding: 7px;
+   color: white;
+   font-weight: bold;
+   background-color: red;
+}
+
+legend {
+    text-align: center;
+    margin-bottom: 35px;
+    font-weight: bold;
+    font-size: 1.4em;
+}
