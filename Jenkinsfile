@@ -18,9 +18,11 @@ pipeline {
             }
         }
         stage('Copy WebSite') {
+            steps{
                 echo 'Copy the web site ...'
                 sh 'rm -rf /Applications/XAMPP/htdocs/WebSiteJava/web'
                 sh 'cp -R /Users/qmoreau/.jenkins/workspace/mspr_java_master/web /Applications/XAMPP/htdocs/WebSiteJava '
+            }
         }
     }
 }
