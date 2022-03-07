@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"msprjava","l":"css_gen"},{"p":"msprjava","l":"Logscreen"},{"p":"msprjava","l":"MSPRJAVA"}];updateSearchResults();

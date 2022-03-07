@@ -54,7 +54,7 @@ public class Logscreen extends Thread{
 "                    </span>\n" +
 "                    <br>\n" +
 "                    <span class=\"login100-form-title p-b-34 p-t-27\">\n" +
-"                        test\n" +
+"                        Connexion\n" +
 "                    </span>\n" +
 "\n" +
 "                    <br>\n" +
