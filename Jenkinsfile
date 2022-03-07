@@ -2,10 +2,12 @@ pipeline {
     agent any
     stages {
         stage('Build Project') {
-            steps {
-                echo 'Building ...'
-                sh 'ant -d'
-                echo 'Building Successful ✅'
+            withAnt(installation: 'myinstall') {
+                steps {
+                    echo 'Building ...'
+                    sh 'ant -d'
+                    echo 'Building Successful ✅'
+                }
             }
         }
         stage('Build WebSite') {
