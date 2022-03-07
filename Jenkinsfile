@@ -6,7 +6,7 @@ pipeline {
                 echo 'Building..'
                 echo 'Java version =>'
                 sh 'java --version'
-                sh 'java -jar ./dist/start_mspr_java.jar'
+                sh 'java -jar ./dist/MSPRJAVA.jar'
             }
         }
     }
