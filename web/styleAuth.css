@@ -7,12 +7,12 @@
 
 body, html {
 	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
+	font-family: Roboto, sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Poppins-Regular;
+	font-family: Roboto;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -38,7 +38,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: Poppins-Regular;
+	font-family: Roboto;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -110,7 +110,7 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
 .txt1 {
-  font-family: Poppins-Regular;
+  font-family: Roboto;
   font-size: 13px;
   color: #e5e5e5;
   line-height: 1.5;
@@ -164,9 +164,7 @@ iframe {
   border-radius: 10px;
   overflow: hidden;
   padding: 55px 55px 37px 55px;
-
-  background: #1e2dff;
-  background: -webkit-linear-gradient(top, #3e939e, rgb(0, 0, 0));
+  background: #379EC1;
 
 }
 
@@ -197,7 +195,7 @@ iframe {
 }
 
 .login100-form-title {
-  font-family: Poppins-Medium;
+  font-family: Roboto;
   font-size: 30px;
   color: #fff;
   line-height: 1.2;
@@ -219,7 +217,7 @@ iframe {
 }
 
 .input100 {
-  font-family: Poppins-Regular;
+  font-family: Roboto;
   font-size: 16px;
   color: #fff;
   line-height: 1.2;
@@ -319,7 +317,7 @@ iframe {
 }
 
 .label-checkbox100 {
-  font-family: Poppins-Regular;
+  font-family: Roboto;
   font-size: 13px;
   color: #fff;
   line-height: 1.2;
@@ -332,7 +330,7 @@ iframe {
 
 .label-checkbox100::before {
   content: "\f26b";
-  font-family: Material-Design-Iconic-Font;
+  font-family: Roboto;
   font-size: 13px;
   color: transparent;
 
@@ -376,7 +374,7 @@ iframe {
 }
 
 .login100-form-btn {
-  font-family: Poppins-Medium;
+  font-family: Roboto;
   font-size: 16px;
   color: #555555;
   line-height: 1.2;
@@ -393,11 +391,7 @@ iframe {
   height: 50px;
   border-radius: 25px;
 
-  background: #9152f8;
-  background: -webkit-linear-gradient(bottom, #7579ff, #b224ef);
-  background: -o-linear-gradient(bottom, #7579ff, #b224ef);
-  background: -moz-linear-gradient(bottom, #7579ff, #b224ef);
-  background: linear-gradient(bottom, #7579ff, #b224ef);
+  background: #659224;
   position: relative;
   z-index: 1;
 
@@ -470,7 +464,7 @@ iframe {
   right: 0px;
   pointer-events: none;
 
-  font-family: Poppins-Regular;
+  font-family: Roboto;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
@@ -487,7 +481,7 @@ iframe {
 
 .alert-validate::after {
   content: "\f12a";
-  font-family: FontAwesome;
+  font-family: Roboto;
   font-size: 16px;
   color: #c80000;
 
