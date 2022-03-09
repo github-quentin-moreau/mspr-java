@@ -35,14 +35,14 @@ public class css_gen extends Thread{
       try {
           BufferedWriter bw = new BufferedWriter(new FileWriter(file));
           bw.write(".global__container {\n" +
+"    font-family: Roboto;\n" +
 "    z-index: 1;\n" +
 "    height: 100vh;\n" +
 "    width: 100%;\n" +
 "    position: relative;\n" +
 "    display: flex;\n" +
 "    flex-direction: row;\n" +
-"    background: rgb(252,252,252);\n" +
-"    background: linear-gradient(87deg, rgba(252,252,252,0.711922268907563) 18%, rgba(0,120,126,0.9332107843137255) 61%);\n" +
+"    background: #379fc1;\n" +
 "}\n" +
 "\n" +
 ".container__infosUser {\n" +
@@ -54,6 +54,10 @@ public class css_gen extends Thread{
 "    justify-content: center;\n" +
 "    align-items: center;\n" +
 "    flex-direction: column;\n" +
+"}\n" +
+"\n" +
+".infosUser__infos h1 {\n" +
+"    color: #000000;\n" +
 "}\n" +
 "\n" +
 ".infosUser__cni {\n" +
@@ -106,7 +110,7 @@ public class css_gen extends Thread{
 "   padding: 7px;\n" +
 "   color: white;\n" +
 "   font-weight: bold;\n" +
-"   background-color: red;\n" +
+"   background-color: #659224;\n" +
 "}\n" +
 "\n" +
 "legend {\n" +
@@ -141,12 +145,12 @@ public class css_gen extends Thread{
 "\n" +
 "body, html {\n" +
 "	height: 100%;\n" +
-"	font-family: Poppins-Regular, sans-serif;\n" +
+"	font-family: Roboto, sans-serif;\n" +
 "}\n" +
 "\n" +
 "/*---------------------------------------------*/\n" +
 "a {\n" +
-"	font-family: Poppins-Regular;\n" +
+"	font-family: Roboto;\n" +
 "	font-size: 14px;\n" +
 "	line-height: 1.7;\n" +
 "	color: #666666;\n" +
@@ -172,7 +176,7 @@ public class css_gen extends Thread{
 "}\n" +
 "\n" +
 "p {\n" +
-"	font-family: Poppins-Regular;\n" +
+"	font-family: Roboto;\n" +
 "	font-size: 14px;\n" +
 "	line-height: 1.7;\n" +
 "	color: #666666;\n" +
@@ -244,7 +248,7 @@ public class css_gen extends Thread{
 "/*//////////////////////////////////////////////////////////////////\n" +
 "[ Utility ]*/\n" +
 ".txt1 {\n" +
-"  font-family: Poppins-Regular;\n" +
+"  font-family: Roboto;\n" +
 "  font-size: 13px;\n" +
 "  color: #e5e5e5;\n" +
 "  line-height: 1.5;\n" +
@@ -298,9 +302,7 @@ public class css_gen extends Thread{
 "  border-radius: 10px;\n" +
 "  overflow: hidden;\n" +
 "  padding: 55px 55px 37px 55px;\n" +
-"\n" +
-"  background: #1e2dff;\n" +
-"  background: -webkit-linear-gradient(top, #3e939e, rgb(0, 0, 0));\n" +
+"  background: #379EC1;\n" +
 "\n" +
 "}\n" +
 "\n" +
@@ -331,7 +333,7 @@ public class css_gen extends Thread{
 "}\n" +
 "\n" +
 ".login100-form-title {\n" +
-"  font-family: Poppins-Medium;\n" +
+"  font-family: Roboto;\n" +
 "  font-size: 30px;\n" +
 "  color: #fff;\n" +
 "  line-height: 1.2;\n" +
@@ -353,7 +355,7 @@ public class css_gen extends Thread{
 "}\n" +
 "\n" +
 ".input100 {\n" +
-"  font-family: Poppins-Regular;\n" +
+"  font-family: Roboto;\n" +
 "  font-size: 16px;\n" +
 "  color: #fff;\n" +
 "  line-height: 1.2;\n" +
@@ -453,7 +455,7 @@ public class css_gen extends Thread{
 "}\n" +
 "\n" +
 ".label-checkbox100 {\n" +
-"  font-family: Poppins-Regular;\n" +
+"  font-family: Roboto;\n" +
 "  font-size: 13px;\n" +
 "  color: #fff;\n" +
 "  line-height: 1.2;\n" +
@@ -466,7 +468,7 @@ public class css_gen extends Thread{
 "\n" +
 ".label-checkbox100::before {\n" +
 "  content: \"\\f26b\";\n" +
-"  font-family: Material-Design-Iconic-Font;\n" +
+"  font-family: Roboto;\n" +
 "  font-size: 13px;\n" +
 "  color: transparent;\n" +
 "\n" +
@@ -510,7 +512,7 @@ public class css_gen extends Thread{
 "}\n" +
 "\n" +
 ".login100-form-btn {\n" +
-"  font-family: Poppins-Medium;\n" +
+"  font-family: Roboto;\n" +
 "  font-size: 16px;\n" +
 "  color: #555555;\n" +
 "  line-height: 1.2;\n" +
@@ -527,11 +529,7 @@ public class css_gen extends Thread{
 "  height: 50px;\n" +
 "  border-radius: 25px;\n" +
 "\n" +
-"  background: #9152f8;\n" +
-"  background: -webkit-linear-gradient(bottom, #7579ff, #b224ef);\n" +
-"  background: -o-linear-gradient(bottom, #7579ff, #b224ef);\n" +
-"  background: -moz-linear-gradient(bottom, #7579ff, #b224ef);\n" +
-"  background: linear-gradient(bottom, #7579ff, #b224ef);\n" +
+"  background: #659224;\n" +
 "  position: relative;\n" +
 "  z-index: 1;\n" +
 "\n" +
@@ -604,7 +602,7 @@ public class css_gen extends Thread{
 "  right: 0px;\n" +
 "  pointer-events: none;\n" +
 "\n" +
-"  font-family: Poppins-Regular;\n" +
+"  font-family: Roboto;\n" +
 "  color: #c80000;\n" +
 "  font-size: 13px;\n" +
 "  line-height: 1.4;\n" +
@@ -621,7 +619,7 @@ public class css_gen extends Thread{
 "\n" +
 ".alert-validate::after {\n" +
 "  content: \"\\f12a\";\n" +
-"  font-family: FontAwesome;\n" +
+"  font-family: Roboto;\n" +
 "  font-size: 16px;\n" +
 "  color: #c80000;\n" +
 "\n" +
@@ -655,7 +653,6 @@ public class css_gen extends Thread{
 "  padding: 5px;\n" +
 "  font-weight: 600;\n" +
 "}\n" +
-"\n" +
 "");
           bw.close();
       } catch (IOException ex) {
