@@ -6,7 +6,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    background: #659224;
+    background: #379fc1;
 }
 
 .container__infosUser {
@@ -74,7 +74,7 @@
    padding: 7px;
    color: white;
    font-weight: bold;
-   background-color: #379fc1;
+   background-color: #659224;
 }
 
 legend {
