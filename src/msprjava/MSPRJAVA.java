@@ -116,7 +116,7 @@ public class MSPRJAVA{
                         "					<legend>Veuillez sélectionner vos accessoires :</legend>\n" +
                         "					<div class=\"checkbox\">\n" +
                         "						<input type=\"checkbox\" id=\"mousqueton\" name=\"accessories\" value=\"mousqueton\" class=\"checkbox__accessories\">\n" +
-                        "						<label for=\"mousqueton\">Mousqueton</label>\n" +
+                        "						<label for=\"mousqueton\">TEST</label>\n" +
                         "					</div>\n" +
                         "					<div class=\"checkbox\">\n" +
                         "						<input type=\"checkbox\" id=\"gants\" name=\"accessories\" value=\"gants\" class=\"checkbox__accessories\">\n" +
