@@ -34,90 +34,95 @@ public class css_gen extends Thread{
         
       try {
           BufferedWriter bw = new BufferedWriter(new FileWriter(file));
-          bw.write(".global__container {\n" +
+          bw.write(
+"*, ::before, ::after {\n" +
+"    box-sizing: border-box;\n" +
+"    padding: 0;\n" +
+"    margin: 0;\n" +
+"}\n" +
+"\n" +
+"body {\n" +
 "    font-family: Roboto;\n" +
-"    z-index: 1;\n" +
 "    height: 100vh;\n" +
 "    width: 100%;\n" +
-"    position: relative;\n" +
-"    display: flex;\n" +
-"    flex-direction: row;\n" +
 "    background: #379fc1;\n" +
 "}\n" +
 "\n" +
-".container__infosUser {\n" +
-"    width: 50%;\n" +
-"    height: 100%;\n" +
-"    align-self: center;\n" +
-"    justify-self: center;\n" +
+".globalcontainer {\n" +
+"    z-index: 1;\n" +
+"    position: relative;\n" +
 "    display: flex;\n" +
-"    justify-content: center;\n" +
+"    flex-direction: column;\n" +
+"}\n" +
+"\n" +
+".containerinfosUser {\n" +
+"    width: 100%;\n" +
+"    height: 30vh;\n" +
+"    display: flex;\n" +
+"    justify-content: space-between;\n" +
 "    align-items: center;\n" +
-"    flex-direction: column;\n" +
+"    flex-direction: row-reverse;\n" +
 "}\n" +
 "\n" +
-".infosUser__infos h1 {\n" +
+".infosUserinfos h1 {\n" +
 "    color: #000000;\n" +
+"    margin-left: 25px;\n" +
+"    padding: 10px;\n" +
+"    text-align: center;\n" +
+"    background-color: #659224;\n" +
+"    border-radius: 10px;\n" +
+"    border: 1px solid black;\n" +
 "}\n" +
 "\n" +
-".infosUser__cni {\n" +
+".infosUsercni {\n" +
+"    position: relative;\n" +
+"    width: 220px;\n" +
+"    height: 190px;\n" +
+"}\n" +
+"\n" +
+".infosUsercni img {\n" +
+"    width: 100%;\n" +
+"    height: 100%;\n" +
+"    position: absolute;\n" +
+"    right: 25px;\n" +
+"}\n" +
+"\n" +
+".containercheckbox {\n" +
+"    width: 100%;\n" +
+"    height: 60vh;\n" +
 "    display: flex;\n" +
 "    justify-content: center;\n" +
-"    margin-bottom: 100px;\n" +
-"}\n" +
-"\n" +
-".infosUser__cni img {\n" +
-"    width: 50%;\n" +
-"}\n" +
-"\n" +
-".container__checkbox {\n" +
-"    width: 50%;\n" +
-"    align-self: center;\n" +
 "    color: white;\n" +
-"    \n" +
+"\n" +
 "}\n" +
 "\n" +
-".checkbox__content {\n" +
+".checkboxcontent {\n" +
 "    display: flex;\n" +
 "    flex-direction: column;\n" +
-"    border: 3px solid black;\n" +
-"    border-radius: 20px;\n" +
-"    width: 50%;\n" +
-"    padding: 20px;\n" +
-"    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;\n" +
+"    width: 100%;\n" +
 "}\n" +
 ".checkbox {\n" +
 "    display: flex;\n" +
 "    flex-direction: row;\n" +
 "    align-items: center;\n" +
-"    margin: 10px;\n" +
+"    margin: 5px;\n" +
+"}\n" +
+"\n" +
+"form {\n" +
+"    display: flex;\n" +
+"    align-items: center;\n" +
 "}\n" +
 "\n" +
 ".checkbox input {\n" +
 "    margin-right: 10px;\n" +
 "}\n" +
 "\n" +
-".checkbox__btnSave {\n" +
-"    display: flex;\n" +
-"    justify-content: center;\n" +
-"    width: 100%;\n" +
-"    margin-top: 25px;\n" +
-"    \n" +
-"}\n" +
-"\n" +
-".btnSave {\n" +
-"   border: 2px solid black;\n" +
-"   padding: 7px;\n" +
-"   color: white;\n" +
-"   font-weight: bold;\n" +
-"   background-color: #659224;\n" +
+".checkboxbtnSave {\n" +
+"    display: none;\n" +
 "}\n" +
 "\n" +
 "legend {\n" +
-"    text-align: center;\n" +
-"    margin-bottom: 35px;\n" +
-"    font-weight: bold;\n" +
-"    font-size: 1.4em;\n" +
+"    display: none;\n" +
 "}");
           bw.close();
       } catch (IOException ex) {
