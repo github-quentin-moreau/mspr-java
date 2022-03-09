@@ -68,7 +68,7 @@ public class MSPRJAVA{
                 System.out.println("Le dossier existe déja.");
             }
         }
-
+ 
         System.out.println("---------------");
 
         for(int i = 0; i< staffSize; i++ ) {
@@ -82,7 +82,7 @@ public class MSPRJAVA{
                     System.out.println("Fichier index existe déjàpour les account index!");
                 }
                 BufferedWriter bw = new BufferedWriter(new FileWriter(file1));
-                bw.write("'<!DOCTYPE html>\n" +
+                bw.write("<!DOCTYPE html>\n" +
                         "<html lang=\"en\">\n" +
                         "<head>\n" +
                         "	<title>MSPR</title>\n" +
@@ -97,6 +97,7 @@ public class MSPRJAVA{
                         "	<link rel=\"stylesheet\" href=\"../../style.css\">\n" +
                         "<!--===============================================================================================-->\n" +
                         "<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>\n" +
+                        "</head>\n" +
                         "<body>\n" +
                         "<!-- Section user authentifié -->\n" +
                         "	<div class=\"global__container\">\n" +
@@ -160,8 +161,6 @@ public class MSPRJAVA{
                         "			</form>\n" +
                         "		</section>	\n" +
                         "	</div>\n" +
-                        "</body>\n" +
-                        "</head>\n" +
                         "<!-- Authentification  -->\n" +
                         "	<script src=\"https://code.jquery.com/jquery-3.6.0.js\" integrity=\"sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=\" crossorigin=\"anonymous\"></script>\n" +
                         "	<script src=\"https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js\" crossorigin=\"anonymous\"></script>\n" +
@@ -169,8 +168,8 @@ public class MSPRJAVA{
                         "	<!--  -->\n" +
                         "	<!-- Page principale  -->\n" +
                         "	<!--  -->\n" +
-                        "<script type=\"text/javascript\">(function(){window['__CF$cv$params']={r:'6def5eebbe573a5d',m:'1fMbEUwClCsxXKA.PJqazq4VnP4haKfLiec8zozzfZQ-1645104632-0-AWLgezT35LbhzSOQLnUXb46mE0R0BHqCU+0bNhFyAvFYVO2ZsPDKdrU7lBkfNp+4nsNogHPo2MBJb/gmsdPtFZBA0nudJ0qQeeJsvsOm1LAVlT0aZoNLqx+1I2kcshZcM3mBMhGxzYJU6LCFmWya1ZNetV+/wvFoM1mzQDQaoapRYEZ/4sRnb0AzLk5LaIrxuw==',s:[0xdb81afa99c,0x6e1fb6f4fb],}})();</script></body>\n" +
-                        "'");
+                        "<script type=\"text/javascript\">(function(){window['__CF$cv$params']={r:'6def5eebbe573a5d',m:'1fMbEUwClCsxXKA.PJqazq4VnP4haKfLiec8zozzfZQ-1645104632-0-AWLgezT35LbhzSOQLnUXb46mE0R0BHqCU+0bNhFyAvFYVO2ZsPDKdrU7lBkfNp+4nsNogHPo2MBJb/gmsdPtFZBA0nudJ0qQeeJsvsOm1LAVlT0aZoNLqx+1I2kcshZcM3mBMhGxzYJU6LCFmWya1ZNetV+/wvFoM1mzQDQaoapRYEZ/4sRnb0AzLk5LaIrxuw==',s:[0xdb81afa99c,0x6e1fb6f4fb],}})();</script></body></html>\n"
+                        );
                 bw.close();
 
             } catch (IOException e) {
