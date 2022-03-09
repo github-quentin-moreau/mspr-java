@@ -84,6 +84,10 @@ public class css_gen extends Thread{
                   "    height: 100%;\n" +
                   "    position: absolute;\n" +
                   "    right: 25px;\n" +
+                  "    transition: all .3s\n" +
+                  "}\n" +
+                  ".infosUser__cni img:hover {\n" +
+                  "    transform: scale(1.4)\n" +
                   "}\n" +
                   "\n" +
                   ".container__checkbox {\n" +

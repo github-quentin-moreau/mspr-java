@@ -48,6 +48,10 @@ body {
     height: 100%;
     position: absolute;
     right: 25px;
+    transition: all .3s
+}
+.infosUser__cni img:hover {
+    transform: scale(1.4)
 }
 
 .container__checkbox {

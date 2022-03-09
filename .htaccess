@@ -1,0 +1,4 @@
+AuthName "This My Awesome Drupal Site Area!!.. Identify Yourself First."
+AuthType Basic
+AuthUserFile /Applications/XAMPP/htdocs/MSPRJAVA/.htpasswd
+require valid-user
