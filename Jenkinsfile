@@ -30,7 +30,10 @@
                 steps{
                     echo 'Copy the web site ...💾'
                     sh 'rm -rf /Applications/XAMPP/htdocs/WebSiteJava/web'
-                    sh 'cp -R /Users/qmoreau/.jenkins/workspace/mspr_java_master/{web, list, .htaccess, .htpasswd} /Applications/XAMPP/htdocs/WebSiteJava '
+                    sh 'cp -R /Users/qmoreau/.jenkins/workspace/mspr_java_master/web /Applications/XAMPP/htdocs/WebSiteJava '
+                    sh 'cp -R /Users/qmoreau/.jenkins/workspace/mspr_java_master/list /Applications/XAMPP/htdocs/WebSiteJava '
+                    sh 'cp -R /Users/qmoreau/.jenkins/workspace/mspr_java_master/.htaccess /Applications/XAMPP/htdocs/WebSiteJava '
+                    sh 'cp -R /Users/qmoreau/.jenkins/workspace/mspr_java_master/.htpasswd /Applications/XAMPP/htdocs/WebSiteJava '
                     echo 'Copy of the Web Site Successful ✅'
                 }
             }
