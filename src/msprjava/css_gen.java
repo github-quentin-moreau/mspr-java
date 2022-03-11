@@ -9,20 +9,18 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
  * @author nico
  */
 public class css_gen extends Thread{
-    
+
   @Override
   public void run() {
       build();
   }
-  public static boolean build() {
+  public static void build() {
       File file = new File("./web/style.css");
       File file2 = new File("./web/styleAuth.css");
     try {   
@@ -90,7 +88,7 @@ public class css_gen extends Thread{
                   "    transition: all .3s\n" +
                   "}\n" +
                   ".infosUser__cni img:hover {\n" +
-                  "    transform: scale(1.4)\n" +
+                  "    transform: scale(1.1)\n" +
                   "}\n" +
                   "\n" +
                   ".container__checkbox {\n" +
