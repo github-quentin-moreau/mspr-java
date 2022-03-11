@@ -14,7 +14,9 @@ public class MSPRJAVA{
 
 
     public static void main(String[] args) {
-
+           build();
+    }
+    public static boolean build() {
         css_gen ok = new css_gen();
         ok.start();
         Logscreen ok2 = new Logscreen();

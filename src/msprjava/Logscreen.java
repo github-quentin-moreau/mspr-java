@@ -18,7 +18,10 @@ public class Logscreen extends Thread{
     
     @Override
     public void run() {
-    File file = new File("./web/index.html");
+        build();
+    }
+    public static boolean build(){
+        File file = new File("./web/index.html");
     
     try {   
         if (file.createNewFile()){

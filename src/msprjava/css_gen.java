@@ -20,6 +20,9 @@ public class css_gen extends Thread{
     
   @Override
   public void run() {
+      build();
+  }
+  public static boolean build() {
       File file = new File("./web/style.css");
       File file2 = new File("./web/styleAuth.css");
     try {   
